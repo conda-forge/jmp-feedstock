@@ -1,5 +1,5 @@
 {% set name = "jmp" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/deepmind/jmp/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 4d242fb14502b15a7c072e112bdcd7cb5d8b373d9733162eea23e0b9b7dbb6d0
+  sha256: 85d844695000cb11d2236fc596395ce661490cd387c465d16015f0bc287a91ac
 
 build:
   number: 0
@@ -38,7 +38,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'JMP is a Mixed Precision library for JAX.'
+  summary: JMP is a Mixed Precision library for JAX.
   description: |
     Mixed precision training [0] is a technique that mixes the use of full
     and half precision floating point numbers during training to reduce
