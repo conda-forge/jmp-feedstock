@@ -1,5 +1,5 @@
 {% set name = "jmp" %}
-{% set version = "0.0.3" %}
+{% set version = "0.0.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/deepmind/jmp/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 85d844695000cb11d2236fc596395ce661490cd387c465d16015f0bc287a91ac
+  sha256: 830a802144e66d27a3acb54d203efcf47067f7c5f4b6312d29d3b65a89a4cba1
 
 build:
   number: 0
