@@ -11,18 +11,18 @@ source:
   sha256: 830a802144e66d27a3acb54d203efcf47067f7c5f4b6312d29d3b65a89a4cba1
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - dataclasses >=0.7
     - numpy >=1.19.5
-    - python >=3.6
+    - python >={{ python_min }}
     - jax
 
 test:
@@ -32,6 +32,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/deepmind/jmp
